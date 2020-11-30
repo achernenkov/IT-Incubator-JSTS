@@ -1,19 +1,19 @@
-const sentense:Array<string> = ['hello', 'my', 'friend']
+const sentence:Array<string> = ['hello', 'my', 'friend']
 
-export function SplitIntoWords(sentense: Array<string>){
-    return sentense
+export function SplitIntoWords(sentence: Array<string>):Array<string>{
+    return sentence
 }
 
-export function sum(a:number, b:number){
+export function sum(a:number, b:number):number{
     return a+b
 }
 
-export function mult(a:number, b:number){
+export function mult(a:number, b:number):number{
     return a*b
 }
 
-export function del(a:number, b:number){
+export function del(a:number, b:number):number{
     return a / b
 }
 
-export default sentense;
+export default sentence;
