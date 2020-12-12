@@ -34,10 +34,12 @@ beforeEach(() => {
 
 test('function addSkill correct', () => {
 
-    addSkill(student, 'GULP')
+    expect(student.tehnologies.length).toBe(3)
+
+    addSkill(student, 'JS')
 
     expect(student.tehnologies.length).toBe(4)
-    expect(student.tehnologies[3].id).toBe(4)
-    expect(student.tehnologies[3].title).toBe('GULP')
+    expect(student.tehnologies[3].id).toBeDefined()
+    expect(student.tehnologies[3].title).toBe('JS')
 
 })

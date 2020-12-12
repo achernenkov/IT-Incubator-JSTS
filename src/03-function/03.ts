@@ -41,5 +41,7 @@ export const addSkill = (student:StudentType, skill:string) => {
 }
 
 
+// Через function - function declaration.
+// Стрелочная - function expression.
 
 export default sum;
