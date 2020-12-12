@@ -2,7 +2,7 @@
 // Ключ - это строка, но удобства не береться в скобки.
 
 // Даемный явный тип объекту, вместо неявного.
-type StudentType = {
+export type StudentType = {
     id: number
     name: string
     age: number
