@@ -74,4 +74,38 @@ console.log(student['Test 3']["Name Key"]["Name Key 2"])
 console.log(student.tehnologies[2].title) // React получили.
 
 
+export type CityType = {
+    title: string
+    houses: Array<HousesType>
+    governmentBuildings: Array<GovernmentBuildingsType>
+    citizensNumber: number
+}
+
+type HousesType = {
+    buildedAt: number
+    repaired: boolean
+    address:AddressBLType
+    street: StreetBLType
+}
+
+type AddressBLType = {
+    number: number
+}
+
+type StreetBLType = {
+    title:string
+}
+
+type GovernmentBuildingsType = {
+    type: string
+    budget: number
+    staffCount: number
+    address: GovernmentBuildingsAddressType
+}
+
+type GovernmentBuildingsAddressType = {
+    street: StreetBLType
+}
+
+
 export default student;
